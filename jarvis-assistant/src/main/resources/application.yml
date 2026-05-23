@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: jarvis-assistant
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/jarvis_ai
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: qwen3.5:2b
+
+server:
+  port: 8080
