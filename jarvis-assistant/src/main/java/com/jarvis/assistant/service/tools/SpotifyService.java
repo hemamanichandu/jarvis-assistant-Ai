@@ -16,7 +16,7 @@ public class SpotifyService {
             String songName = command.getSongName();
 
             Runtime.getRuntime().exec(
-//                    "cmd /c start https://open.spotify.com/search/" + songName
+//            
                     "cmd /c start spotify:search:" + songName
             );
 
