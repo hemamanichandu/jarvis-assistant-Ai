@@ -36,33 +36,16 @@ public class ToolExecutionService {
 
             case "chrome":
                 Runtime.getRuntime().exec(
-                        "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+                        "chrome path"
                 );
+                //or google path
                 Runtime.getRuntime().exec(
-                        "rundll32 url.dll,FileProtocolHandler https://google.com"
+                        "google path"
                 );
-                Runtime.getRuntime().exec("notepad");
-                Runtime.getRuntime().exec("calc");
-                /*Runtime.getRuntime().exec(
-                        "C:\\Users\\donka\\Desktop\\resume.pdf"
-                );
-                Runtime.getRuntime().exec(
-                        "explorer.exe C:\\Users\\donka\\Downloads"
-                );
-                Runtime.getRuntime().exec(
-                        "cmd /c start chrome https://youtube.com"
-                );*/
                 return "Chrome opened";
 
-
-
             case "calc":
-              /* *//* Runtime.getRuntime().exec(
-                        "C:\\Users\\donka\\OneDrive\\Desktop\\Instagram.lnk"
-                );*//*
-                Runtime.getRuntime().exec(
-                        "cmd /c start \"\" \"C:\\Users\\donka\\OneDrive\\Desktop\\Instagram.lnk\""
-                );*/
+             
                 Runtime.getRuntime().exec("calc");
 
                 return "calculater opened";
@@ -84,7 +67,7 @@ public class ToolExecutionService {
             case "play_song":
 
                 Runtime.getRuntime().exec(
-                        "cmd /c start spotify:track:4cOdK2wGLETKBW3PvgPWqT"
+                        "endpoint for an song"
                 );
 
                 return "Playing song";
